@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第一题</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="curtain hide" id="curtain" onclick="curtain_close(event)">
+		<div class="modal hide" id="modal1">
+			<button onclick="open_clock()" id="open-clock">开始倒计时</button>
+			<button onclick="close_modal()">关闭</button>
+		</div>
+		<div class="modal hide" id="modal2">
+			<p id="clock">01:00</p>
+		</div>
+	</div>
+	<header id="header">
+		<button onclick="open_modal()" id="header-button">弹出对话框</button>
+	</header>
+	<div id="main">
+		<div id="main-left"></div>
+		<div id="main-right"></div>
+	</div>
+	<footer id="footer">footer<br>这里footer的高度是撑出来的</footer>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
